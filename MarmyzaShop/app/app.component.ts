@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   template: `<h1>Hello {{name}}</h1><a routerLink="/home">Home</a>
    <router-outlet></router-outlet>`,
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { name = 'Angular'; } 

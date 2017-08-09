@@ -11,6 +11,6 @@ const appRoutes: Routes = [
 @NgModule({
     imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
   declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ] 
 })
 export class AppModule { }
