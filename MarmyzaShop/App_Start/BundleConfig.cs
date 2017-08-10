@@ -43,9 +43,9 @@ namespace MarmyzaShop
                       "~/Content/css/hero-slider.css",
                       "~/Content/css/project-slider.css",
 
-                      //"~/Content/font-awesome.min.css",
                       "~/Content/login-window/login-window.css",
-                      "~/Content/login-window/font-awesome.min.css"
+                      "~/Content/login-window/font-awesome.min.css",
+                      "~/Content/font-awesome-4.7.0/css/font-awesome.min.css"
                 ));
         }
     }
