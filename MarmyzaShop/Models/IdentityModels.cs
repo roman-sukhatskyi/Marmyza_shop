@@ -27,7 +27,6 @@ namespace MarmyzaShop.Models
         {
 
         }
-
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
@@ -39,5 +38,9 @@ namespace MarmyzaShop.Models
         public DbSet<Image.Image> Images { get; set; }
         public DbSet<Image.SysImage> SysImages { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder); 
+        }
     }
 }
