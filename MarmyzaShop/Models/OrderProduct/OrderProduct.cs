@@ -27,6 +27,6 @@ namespace MarmyzaShop.Models.OrderProduct
 
         public ApplicationUser ApplicationUser { get; set; }
         [ForeignKey("ApplicationUser")]
-        public Guid? UserId { get; set; }
+        public string UserId { get; set; }
     }
 }
