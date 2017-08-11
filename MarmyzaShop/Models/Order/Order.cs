@@ -10,5 +10,9 @@ namespace MarmyzaShop.Models.Order
     public class Order : Entity
     {
         public virtual ICollection<OrderProduct.OrderProduct> OrderProducts { get; set; }
+
+        public ApplicationUser ApplicationUser { get; set; }
+        [ForeignKey("ApplicationUser")]
+        public string UserId { get; set; }
     }
 }

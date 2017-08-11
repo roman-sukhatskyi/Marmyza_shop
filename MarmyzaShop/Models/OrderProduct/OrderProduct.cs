@@ -24,9 +24,5 @@ namespace MarmyzaShop.Models.OrderProduct
         public int? Quantity { get; set; }
 
         public decimal? Amount { get; set; }
-
-        public ApplicationUser ApplicationUser { get; set; }
-        [ForeignKey("ApplicationUser")]
-        public string UserId { get; set; }
     }
 }
