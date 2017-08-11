@@ -7,17 +7,17 @@ namespace MarmyzaShop.Models.UnitOfWork
 {
     public class UnitOfWork : IDisposable
     {
-        private readonly DataBaseContext context;
+        private readonly ApplicationDbContext context;
         private bool disposed;
         private Dictionary<string, object> repositories;
 
-        public UnitOfWork(DataBaseContext context)
+        public UnitOfWork(ApplicationDbContext context)
         {
             this.context = context;
         }
         public UnitOfWork()
         {
-            context = new DataBaseContext();
+            context = new ApplicationDbContext();
         }
         public void Dispose()
         {

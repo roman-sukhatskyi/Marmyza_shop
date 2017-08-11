@@ -9,10 +9,10 @@ namespace MarmyzaShop.Models
 {
     public class GenericRepository <T> : IRepository<T> where T : class
     {
-        private DataBaseContext db;
+        private ApplicationDbContext db;
         public GenericRepository()
         {
-            this.db = new DataBaseContext();
+            this.db = new ApplicationDbContext();
         }
         public virtual IQueryable<T> GetAll()
         {

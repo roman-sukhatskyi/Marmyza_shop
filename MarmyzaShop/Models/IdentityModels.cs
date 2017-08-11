@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using System.Data.Entity;
+using System;
 
 namespace MarmyzaShop.Models
 {
@@ -23,11 +25,19 @@ namespace MarmyzaShop.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Product.Product> Products { get; set; }
+        public DbSet<Product.ProductCategory> ProductCategorys { get; set; }
+        public DbSet<Order.Order> Orders { get; set; }
+        public DbSet<OrderProduct.OrderProduct> OrderProducts { get; set; }
+        public DbSet<Image.Image> Images { get; set; }
+        public DbSet<Image.SysImage> SysImages { get; set; }
+
     }
 }
