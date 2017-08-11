@@ -1,4 +1,5 @@
 ﻿using MarmyzaShop.Models.Base;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -24,9 +25,8 @@ namespace MarmyzaShop.Models.OrderProduct
 
         public decimal? Amount { get; set; }
 
-        //public RegisterBindingModel RegisterBindingModel { get; set; }
-
-        //[ForeignKey("RegisterBindingModel")]
-        //public Guid? UserId { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+        [ForeignKey("ApplicationUser")]
+        public Guid? UserId { get; set; }
     }
 }
