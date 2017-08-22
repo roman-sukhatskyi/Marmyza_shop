@@ -6,6 +6,7 @@ using System.Web;
 using MarmyzaShop.Interfaces;
 using System.Linq.Expressions;
 using MarmyzaShop.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace MarmyzaShop.Implementations
 {

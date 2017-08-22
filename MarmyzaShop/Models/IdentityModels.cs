@@ -32,7 +32,7 @@ namespace MarmyzaShop.Models
             return new ApplicationDbContext();
         }
         public DbSet<Product.Product> Products { get; set; }
-        public DbSet<Product.ProductCategory> ProductCategorys { get; set; }
+        public DbSet<Product.ProductCategory> ProductCategories { get; set; }
         public DbSet<Order.Order> Orders { get; set; }
         public DbSet<OrderProduct.OrderProduct> OrderProducts { get; set; }
         public DbSet<Image.Image> Images { get; set; }

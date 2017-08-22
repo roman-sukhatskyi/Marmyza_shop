@@ -14,6 +14,8 @@ namespace MarmyzaShop.Models.Product
         }
         public string Image { get; set; }
 
+        public int Code { get; set; }
+
         public virtual ICollection<Product> Products { get; set; }
     }
 }
