@@ -36,7 +36,6 @@ namespace MarmyzaShop.Models
         public DbSet<Order.Order> Orders { get; set; }
         public DbSet<OrderProduct.OrderProduct> OrderProducts { get; set; }
         public DbSet<Image.Image> Images { get; set; }
-        public DbSet<Image.SysImage> SysImages { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
